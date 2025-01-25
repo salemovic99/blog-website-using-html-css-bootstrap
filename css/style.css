@@ -1,0 +1,371 @@
+/* primary #2d046f */
+/* secondry #fceaff */
+/* third #5d4775 */
+:root {
+    --primary-color: #2d046f;
+    --secondry-color:#fceaff;
+    --third-color : #5d4775;
+  }
+
+  *{
+    font-family: 'Cairo', sans-serif;
+  }
+
+/* Start Custom classes */
+ .text-color-primary{
+  color: var(--primary-color);
+ } 
+
+ .text-color-secondery{
+  color: var(--secondry-color);
+ } 
+
+ .text-color-third{
+  color: var(--third-color);
+ } 
+
+ .bg-color-primary{
+  background-color: var(--primary-color);
+ }
+
+ .bg-color-secondery{
+  background-color: var(--secondry-color);
+ }
+ .bg-color-third{
+  background-color: var(--third-color);
+ }
+
+ .custome-rounded-btn{
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.2s ease-in-out;
+ }
+ .custome-rounded-btn:hover{
+  background-color: #4508a79e;
+  color: white;
+  
+ }
+
+ .custome-btn{
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #da0039, #d50057, #c20079, #9c009c, #520ebc);
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+}
+
+.custome-btn:hover{
+  background-color:#360486c9 ;
+}
+
+.secondery-btn{
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: 1px solid #bca9d0;
+  border-radius: 5px;
+  background-color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.2s
+}
+
+.secondery-btn:hover{
+  border: 1px solid #77119aa7;
+  box-shadow: 0 0 10px --primary-color;
+}
+
+
+.custome-input input{
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  margin: 10px;
+  border-bottom: 2px solid #b6a3d6b2 ;
+  width: 96%;
+}
+
+.custome-input input::placeholder{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 1s ease-out;
+}
+
+.custome-input input:focus::placeholder{
+  transform: translateY(-15px);
+  font-size: 10px;
+}
+
+.custome-input input:hover{
+  border-bottom: 2px solid #9e8bc0;
+  
+}
+
+/*  End Custom classes */
+
+
+
+*{
+  scroll-behavior: smooth;
+}
+
+
+section{
+  min-height: 95vh;
+  min-width: 100%;
+}
+
+#title::after{
+  content: "";
+  animation-name: RemoveAndRewriteText;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+#btn-explore{
+  transition: 1s;
+}
+#btn-explore:hover{
+  
+  transform: scale(1.1);
+}
+
+/* Start Custome Animation */
+@keyframes RemoveAndRewriteText {
+  0%{
+    content: "مدونتنا"; 
+  }
+  15%{
+    content: "مدونتنا"; 
+  }
+  25%{
+    content: "مدونتن";
+  }
+  40%{
+    content: "مدونت";
+  }
+  60%{
+    content: "مدون";
+  }
+  75%{
+    content: "مدو";
+  }
+  85%{
+    content: "مد";
+  }
+  100%{
+    content: "م";
+  }
+
+}
+
+@keyframes TopDwon {
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(-10%);
+  }
+}
+
+@keyframes ChangeColorText {
+  0%{
+    color: #c3b2df;
+  }
+  100%{
+    color: #845fbe;
+  }
+ 
+}
+
+@keyframes ChangeBackground {
+  0%{
+    background-color: #2d046f;
+  }
+  100%{
+    background-color: #a6144e;
+  }
+ 
+}
+
+/* End Custome Animation */
+
+
+
+
+#hero-img{
+  animation-name:TopDwon ;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+
+
+#Message{
+  resize: none;
+}
+
+/* sign in page */
+
+#left{
+  background-image: url("/imgs/unsplash1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#right{
+  
+  background-image: linear-gradient(to right, #0e0425, #29174b, #522070, #832191, #bb12ac);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation-name: changebackgroundcolor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  
+}
+
+
+/* @keyframes changebackgroundcolor {
+  0%{
+    background-image: linear-gradient(to right, #b50cd7, #b50cd7);
+  }
+  50%{
+    background-image: linear-gradient(to right, #b50cd77c, #b50cd7);
+  }
+  50%{
+    background-image: linear-gradient(to right, #b50cd7, #b50cd7);
+  }
+  
+} */
+
+@keyframes writeAndDeleteAndRewrite {
+  0%{
+    content: "مرحبا";
+  }
+  5%{
+    content: "مرحبا";
+  }
+  15%{
+    content: "مرحبا ";
+  }
+  25%{
+    content: "مرحبا ب";
+  }
+  35%{
+    content: "مرحبا بك";
+  }
+  45%{
+    content: "مرحبا بكم ";
+  }
+  50%{
+    content: "مرحبا بكم ف";
+  }
+  60%{
+    content: "مرحبا بكم في ";
+  }
+  70%{
+    content: "مرحبا بكم في م";
+  }
+  75%{
+    content: "مرحبا بكم في مد ";
+  }
+  80%{
+    content: "مرحبا بكم في مدو";
+  }
+  85%{
+    content: "مرحبا بكم في مدون";
+  }
+  90%{
+    content: "مرحبا بكم في مدونت";
+  }
+  95%{
+    content: "مرحبا بكم في مدونتنا";
+  }
+  100%{
+    content: "مرحبا بكم في مدونتنا!";
+  }
+  
+}
+
+.title{
+  padding: 20px;
+  font-size: 2em;
+  font-weight: 800;
+  color: #2d046f;
+  text-transform: uppercase;
+  animation-name: ChangeColorText;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+#left h3{
+  padding: 10px;
+  font-weight: 300;
+  font-size: 2em;
+  color: wheat;
+}
+
+/* sign in page */
+
+
+
+/* Blogs page */
+
+.categories{
+  margin-top: 30px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.categories a{
+  margin: 5px;
+  background-color: #eee;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 5px 15px;
+  color: #333;
+  transition: 0.5s;
+}
+.active-cat{
+  border: 2px solid #00000046;
+}
+.categories a:hover{
+ background-color: #eeeeee8f;
+ 
+}
+/* Blogs page */
+
+

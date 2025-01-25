@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body dir="rtl">
+
+   <section id="signin" style="min-height: 100vh;">
+    <div class="">
+
+        <div class="row">
+            <div id="left" class="col-lg-7  overflow-hidden" style="height: 100vh;">
+               
+                <h1 class="title display-1 fw-bold"> مرحبًا بك مرة أخرى في مدونتك!</h1>
+
+                <h3 >الرجاء تسجيل الدخول لبدء القراءة والمشاركة <br> أفكارك مع العالم.</h3> 
+            </div>
+
+            
+            <div class="col-lg-5 p-4">
+                <h2 class="text-center fw-light text-dark display-6 mt-5 text-uppercase">تسجيل <span class="fw-bold">الدخول</span><br> إلى مدونتك</h2>
+            
+                <div class="row d-flex justify-content-center align-items-center ">
+                    <form action="" style="margin-top: 100px;" class="col-xxl-10 col-lg-8 px-5 needs-validation " novalidate >
+                        <div class="custome-input mb-2">
+                            <input type="email"   placeholder="البريد الإلكتروني">
+                            <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                          
+                        </div>
+                
+                        <div class="custome-input mb-4">
+                            <input type="password"   placeholder="كلمة المرور">
+                            <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                          
+                        </div>
+                
+                        <button type="submit" class="custome-btn w-100" >تسجيل الدخول</button>
+                        <a href=""  class="secondery-btn w-100 mt-3"><i class="me-2 fs-5 fa-brands fa-google"></i>تسجيل الدخول باستخدام Google</a>
+                    </form>
+                </div>
+                
+                <p class="text-center mt-5">ليس لديك حساب؟ <a href="signUp.html" class="text-decoration-none">إنشاء حساب</a></p>
+            </div>
+            
+
+        </div>
+        
+       </div>
+   </section>
+
+   <script>
+        const forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+  form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+
+    form.classList.add('was-validated')
+  }, false)
+})
+
+    
+   </script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/mian.js"></script>
+</body>
+</html>

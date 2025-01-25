@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="aos/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body dir="rtl">
+
+<!-- Start NavBar Section -->
+  <div class="container">
+
+    <nav class="navbar  navbar-expand-lg bg-body-tertiary ">
+      <div class="container ">
+
+        
+          <div class="ms-5">
+            <a class="navbar-brand text-dark fw-bold fs-1" href="#"> المدونة  </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars text-dark"></i></span>
+          </button>
+        
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+          
+          <div class="navbar-nav ms-5" dir="rtl">
+            <a class="nav-link text-color-primary fw-light fs-4" href="#">الرئيسية</a>
+            <a class="nav-link text-color-primary fw-light fs-4" href="#">المدونات</a>            
+            <a class="nav-link text-color-primary fw-light fs-4" href="contact.html">تواصل معنا</a>
+        </div>
+        <div>
+            <a href="signin.html" class="custome-rounded-btn px-3 text-uppercase fw-lighter" >تسجيل الدخول</a>
+        </div>
+        
+       
+        
+
+      </div>
+    </nav>
+  </div>
+<!-- End NavBar Section -->
+
+
+<!-- Start Hero Section -->
+  <section id="hero"  style="max-height: 100dvh;">
+    <div class="container pt-5 mt-5 ">
+
+      <div class="row align-content-center justify-content-evenly flex-xl-row flex-sm-column-reverse">
+
+       
+
+        <div class=" col-lg-6  p-5  ">
+            <h1 class="display-2 text-capitalize mb-3">مرحباً <br> بكم في <span id="word" class="text-primary fw-bold display-1"></span></h1>
+            <p class="lead fw-light mb-5">اكتشف أحدث المقالات والأخبار والرؤى.</p>
+            <a href="#articles" id="btn-explore" class="custome-rounded-btn w-25 mb-sm-4 px-4 py-2">استكشاف</a>
+        </div>
+        
+
+        <div class=" col-lg-4  p-5" data-aos="fade-up" data-aos-delay="100">
+          <img id="hero-img" src="imgs/undraw_design-components_529l.svg" alt="img"   class="w-100">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- End Hero Section -->
+
+
+<!-- Start blog Section -->
+<section id="blog"  >
+  <div class="container">
+
+    <h2 class="text-center text-primary fw-light display-4 mb-4">أحدث المقالات </h2>
+
+    <p class="text-center lead mb-5">تعرف على أحدث المقالات والأخبار والرؤى.</p>
+    
+    <div class="row gap-3 align-content-center justify-content-around mt-5 p-4">
+    
+      <div class="col-lg-3 " data-aos="fade-up" data-aos-delay="200">
+        <div class="card" style="width: 18rem;">
+          <img src="imgs/news.jpg" class="card-img-top " alt="img">
+          <div class="card-body">
+            <h5 class="card-title">البيانات الضخمة</h5>
+            <p class="card-text">البيانات الضخمة: قوة هائلة تمكّن الشركات من استخدام البيانات الضخمة للاستفادة من التحليلات العميقة واتخاذ القرارات الاستراتيجية الذكية.</p>
+            <a href="#" class="btn btn-primary">اقرأ المزيد</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="card" style="width: 18rem;">
+          <img src="imgs/cyber-security.jpg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">أمان السيبراني</h5>
+            <p class="card-text">"أمان الإنترنت أساسي: يحمي الأمان السيبراني بياناتك وخصوصيتك عبر الإنترنت من الهجمات الإلكترونية ويضمن سلامة تفاعلاتك الرقمية.</p>
+            <a href="#" class="btn btn-primary">اقرأ المزيد</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="card" style="width: 18rem;">
+          <img src="imgs/computer.jpg" class="card-img-top " alt="img">
+          <div class="card-body">
+            <h5 class="card-title">تعلم الآلة</h5>
+            <p class="card-text">"التعلم الآلي: تقنية تمكن الأجهزة والبرامج من تعلم النماذج والتنبُّؤات بناءً على البيانات، مما يُمكِّنها من اتخاذ قرارات ذكية وتحقيق التقدم السريع.</p>
+            <a href="#" class="btn btn-primary">اقرأ المزيد</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="" class="custome-rounded-btn ">كل المقالات</a>
+    </div>
+  </div>
+</section>
+<!-- Start blog Section -->
+
+
+  <!-- Start About Section -->
+  <section id="about" class="pt-5">
+    <div class="container">
+  
+      <h2 class="display-4 fw-light text-center text-color-primary mb-5">لماذا مدونتنا <span class="fw-bold text-dark">رائعة</span></h2>
+  
+      <div class="row align-content-center justify-content-evenly">
+
+        <div class="col-lg-4" data-aos="fade-left" data-aos-delay="200">
+          <img src="imgs/undraw_team_work_k-80-m.svg" alt="صورة" class="img-fluid w-75">
+        </div>
+  
+        <div class="col-lg-5" data-aos="fade-right" data-aos-delay="300">
+          <p class="fs-2 text-capitalize">
+            تعتبر مدونتنا رائعة لعدة أسباب. أولاً، نقوم بنشر محتوى عالي الجودة بشكل منتظم. مقالاتنا مكتوبة بشكل جيد ومفيدة وجذابة. نغطي مجموعة واسعة من المواضيع، لذا هناك شيء للجميع.
+          </p>
+        </div>
+
+      </div>
+      <img src="imgs/wave2.svg" alt="" >
+    </div>
+  </section>
+  <!-- Start About Section -->
+
+
+<!-- Start Review Section -->
+<section id="review" class="bg-color-secondery">
+  <div class="container pt-5">
+    <h2 class="text-center display-4 text-color-third text-capitalize mb-5">&quot; ما يقوله الناس عنا &quot;</h2>
+    <div class="row gap-3 align-content-center justify-content-around mt-5 p-5" data-aos="zoom-in" data-aos-delay="200">
+      <div class="col-lg-3 p-4 shadow-lg text-color-primary rounded-1">
+        <img src="imgs/comments-2.jpg" alt="التعليق 2" class="mb-3 img-fluid rounded-pill w-25">
+        <p class="lead">"أنا أحب قراءة مشاركات مدونتكم! دائماً تكون مفيدة وجذابة."</p>
+      </div>
+
+      <div class="col-lg-3 p-4 shadow-lg text-color-primary rounded-1" data-aos="zoom-in" data-aos-delay="300">
+        <img src="imgs/comments-5.jpg" alt="التعليق 5" class="mb-3 img-fluid rounded-pill w-25">
+        <p class="lead">"ساعدتني مدونتك كثيرًا في تعلم الكثير عن [موضوع مدونتك]. شكراً لكم على مشاركة معرفتكم مع العالم!"</p>
+      </div>
+
+      <div class="col-lg-3 p-4 shadow-lg text-color-primary rounded-1" data-aos="zoom-in" data-aos-delay="400">
+        <img src="imgs/comments-6.jpg" alt="التعليق 6" class="mb-3 img-fluid rounded-pill w-25">
+        <p class="lead">"أجد مشاركات مدونتكم دائمًا مفيدة وقابلة للتطبيق. لقد تعلمت الكثير منكم."</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- End Review Section -->
+
+  <!-- start news sectio -->
+   <div style="max-height: 250px;background-color: darkblue;" class="p-5">
+    <div class="row d-flex justify-content-center align-items-center">
+
+      <div class="col-xl-4">
+        <h2 class="text-end text-white fw-light"> الاشتراك في النشرة البريدية</h2>
+    </div>
+
+      <div class="col-xl-5">
+        <form action="" class="d-flex justify-content-center align-items-center">
+
+          <div class="form-floating w-100 m-3">
+            <input type="email" name="" id="email" placeholder="البريد الإلكتروني" class="form-control">
+            <label for="email" class="form-label">البريد الإلكتروني</label>
+          </div>
+
+          <div class="mt-3 text-start">
+            <button type="submit" class="custome-rounded-btn">الاشتراك</button>
+          </div>
+          
+        </form>
+      </div>
+
+
+     
+    </div>
+   </div>
+  <!-- end news sectio -->
+
+
+
+<!-- ======= F.A.Q Section ======= -->
+<section id="faq" class="d-flex align-items-center justify-content-center">
+
+  <div class="container" data-aos="fade-up">
+
+      <header class="text-center mb-5">
+          <h2>F.A.Q</h2>
+          <p class="text-dark">الأسئلة المتكررة</p>
+      </header>
+
+      <div class="row d-flex justify-content-center ">
+          <div class="col-lg-8 card p-5 shadow-lg ">
+
+              <div class="accordion accordion-flush" id="faq-group-1">
+
+
+                
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" data-bs-target="#faqsOne-1" type="button" data-bs-toggle="collapse">
+                              1. ما هو الغرض من هذه المدونة؟
+                          </button>
+                      </h2>
+                      <div id="faqsOne-1" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                          <div class="accordion-body">
+                              الغرض من هذه المدونة هو مشاركة المعلومات والتحليلات حول [موضوع المدونة]. أرغب في مساعدة قرائي في تعلم المزيد حول [موضوع المدونة] وتوفير موارد قيمة لهم.
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" data-bs-target="#faqsOne-2" type="button" data-bs-toggle="collapse">
+                              2. كم مرة تقومون بنشر مقالات جديدة في المدونة؟
+                          </button>
+                      </h2>
+                      <div id="faqsOne-2" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                          <div class="accordion-body">
+                              أهدف لنشر مقالات جديدة في المدونة كل اسبوع. ومع ذلك، قد يكون هناك أوقات أنشر فيها بشكل أكثر أو أقل، اعتمادًا على جدولي والالتزامات الأخرى.
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" data-bs-target="#faqsOne-3" type="button" data-bs-toggle="collapse">
+                              3. كيف يمكنني التواصل معك؟
+                          </button>
+                      </h2>
+                      <div id="faqsOne-3" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                          <div class="accordion-body">
+                              <p >يمكنك التواصل معي عبر Jakihop889@gmail.com أو عن طريق ترك تعليق على أحد مقالاتي في المدونة. سأبذل قصارى جهدي للرد على جميع الاستفسارات في أقرب وقت ممكن.</p>
+                          </div>
+                      </div>
+                  </div>
+
+                 
+
+              </div>
+          </div>
+
+
+
+      </div>
+
+  </div>
+
+</section><!-- End F.A.Q Section -->
+
+
+  <!-- Start footer Section -->
+  <footer class="bg-color-primary">
+    <div class="container pt-3 pb-5">
+      <div class="row justify-content-evenly">
+  
+        <div class="col-lg-3 text-center">
+          <a class="text-decoration-none text-white fw-bold fs-1" href="#">المدونة</a>
+        </div>
+  
+        <div class="col-lg-3 text-start">
+         
+
+          <div class="mt-3">
+            <a href=""><i class="me-2 text-color-secondery fs-5 fa-brands fa-google"></i></a>
+            <a href=""><i class="me-2 text-color-secondery fs-5 fa-brands fa-github"></i></a>
+            <a href=""><i class="me-2 text-color-secondery fs-5 fa-brands fa-x-twitter"></i></a>
+          </div>
+          <div class="mt-2">
+            <p class="text-white">2023 &copy; جميع الحقوق محفوظة</p>
+          </div>
+        </div>
+  
+      
+  
+        
+      </div>
+    </div>
+  </footer>  
+<!-- End footer Section -->
+
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="aos/aos.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#word', {
+                strings: ['مدونتا'],
+                typeSpeed:150,
+                backSpeed: 150,
+                loop: true,
+                loopCount: Infinity,
+
+                });
+</script>
+<script>
+      AOS.init({
+          duration: 1500,
+      });
+</script>
+
+</body>
+</html>
